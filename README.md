@@ -7,18 +7,21 @@ This dataset contains detailed information about tech industry job roles and sal
 
 🔢 Key Columns:
 
-Column Name	Description
-work_year	The year in which the salary was recorded.
-experience_level	The seniority level of the employee (e.g., Entry-Level, Mid-Level, Senior, Executive).
-employment_type	The type of employment contract (e.g., Full-time, Part-time, Freelance, Contract).
-job_title	The specific role or job title held by the employee (e.g., Data Scientist, ML Engineer).
-salary	The salary in the original local currency (not used in model training).
-salary_currency	The currency in which the salary is paid (e.g., USD, EUR, INR).
-salary_in_usd	The salary converted to USD (used as the target variable for prediction).
-employee_residence	The country where the employee resides.
-remote_ratio	The percentage of remote work (0 = on-site, 50 = hybrid, 100 = fully remote).
-company_location	The location (country) of the company's headquarters.
-company_size	The size of the company — Small (S), Medium (M), or Large (L).
+| Column Name             | Description                                                                              |
+| ----------------------- | ---------------------------------------------------------------------------------------- |
+| **work\_year**          | The year in which the salary was recorded.                                               |
+| **experience\_level**   | The seniority level of the employee (e.g., Entry-Level, Mid-Level, Senior, Executive).   |
+| **employment\_type**    | The type of employment contract (e.g., Full-time, Part-time, Freelance, Contract).       |
+| **job\_title**          | The specific role or job title held by the employee (e.g., Data Scientist, ML Engineer). |
+| **salary**              | The salary in the original local currency (not used in model training).                  |
+| **salary\_currency**    | The currency in which the salary is paid (e.g., USD, EUR, INR).                          |
+| **salary\_in\_usd**     | The salary converted to USD (used as the target variable for prediction).                |
+| **employee\_residence** | The country where the employee resides.                                                  |
+| **remote\_ratio**       | The percentage of remote work (0 = on-site, 50 = hybrid, 100 = fully remote).            |
+| **company\_location**   | The location (country) of the company's headquarters.                                    |
+| **company\_size**       | The size of the company — Small (S), Medium (M), or Large (L).                           |
+
+
 🎯 Target Variable:
 
     salary_in_usd – The annual salary of the employee converted to US dollars, which is the value the machine learning model aims to predict.
