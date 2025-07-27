@@ -2,8 +2,11 @@
  Predictive Modeling for finding salary in USD   for techies in  AI , Machine Learning and Data Science roles in the year 2020-2025  using Machine Learning Algorithms 
  
 📄 Dataset Description
+
 This dataset contains detailed information about tech industry job roles and salaries across various locations and companies. It is primarily used to predict salary in USD based on multiple employee and company-related attributes. The data spans different levels of experience, job titles, remote work ratios, and geographic locations, providing a rich context for building a machine learning salary prediction model.
+
 🔢 Key Columns:
+
 Column Name	Description
 work_year	The year in which the salary was recorded.
 experience_level	The seniority level of the employee (e.g., Entry-Level, Mid-Level, Senior, Executive).
