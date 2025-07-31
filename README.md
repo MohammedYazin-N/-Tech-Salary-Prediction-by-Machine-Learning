@@ -61,24 +61,43 @@ Checked for duplicate records
 
 Verified structure and feature relevance
 
-🧼 Stage 2: Preprocessing & Cleaning 🔹 Handling Missing Values Missing values in alcohol_consumption (~60%) were filled with "Unknown" to retain behavioral information
+🧼 Stage 2: Preprocessing & Cleaning 🔹 
+🔹Removing Duplicates
+    Identified and removed duplicate rows to avoid biased model training.
 
-No other columns had significant missing data
+🔹 Outlier Detection & Treatment
 
-🔹 Categorical Encoding Identified object-type columns and applied one-hot encoding
+    Detected outliers in the salary_in_usd (target) column using the IQR method:
 
-drop_first=True used to prevent multicollinearity
+        Computed Q1 (25th percentile) and Q3 (75th percentile)
 
-🔹 Outlier Detection Used boxplots to visualize potential outliers in all numeric features
+        Defined outlier bounds:
+        Lower Bound = Q1 - 1.5 × IQR
+        Upper Bound = Q3 + 1.5 × IQR
 
-No removal was applied due to the clinical significance of outliers in healthcare (e.g., high blood pressure may indicate actual heart attack risk)
+    Filtered out extreme salary values outside these bounds to prevent distortion in the model.
 
-🔹 Feature Scaling Applied StandardScaler only to numeric features using a Pipeline with ColumnTransformer
+🔹 4. Skewness Correction
+
+           Analyzed the skewness of the target variable (salary_in_usd), which showed a strong right-skew.
+
+           Applied log transformation (log1p) to reduce skewness and improve model performance.
+
+🔹 5. Data Type Conversion
+
+           Ensured appropriate data types for each column (e.g., converting categorical columns to object or category).
+ 
+🔹 6. Categorical Feature Encoding
+      Converted categorical variables like job_title, company_size, etc., into numerical format using  One-Hot Encoding as required.
+
+
+🔹 Feature Scaling Applied StandardScaler  to training Data
 
 This standardization ensures consistent scale for models sensitive to feature magnitude
 
 🔹 Train/Test Split Split data into 80% training and 20% testing sets
 
-Used stratified sampling to maintain class balance in heart_attack
 
-✅ Current Project Status ✔ Preprocessing complete ⏳ Ready to proceed to Stage 3: Machine Learning Modeling & Evaluation
+✅ Current Project Status ✔ Preprocessing complete ⏳
+
+🚀  Ready to proceed to Stage 3: Machine Learning Modeling & Evaluation🚀 
