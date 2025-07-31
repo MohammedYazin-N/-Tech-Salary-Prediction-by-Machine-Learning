@@ -62,6 +62,7 @@ Checked for duplicate records
 Verified structure and feature relevance
 
 🧼 Stage 2: Preprocessing & Cleaning 🔹 
+
 🔹Removing Duplicates
     Identified and removed duplicate rows to avoid biased model training.
 
