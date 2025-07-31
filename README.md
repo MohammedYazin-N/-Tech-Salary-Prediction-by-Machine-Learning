@@ -91,11 +91,11 @@ Verified structure and feature relevance
       Converted categorical variables like job_title, company_size, etc., into numerical format using  One-Hot Encoding as required.
 
 
-🔹 Feature Scaling Applied StandardScaler  to training Data
+🔹 7.  Feature Scaling Applied StandardScaler  to training Data
 
 This standardization ensures consistent scale for models sensitive to feature magnitude
 
-🔹 Train/Test Split Split data into 80% training and 20% testing sets
+🔹 8.  Train/Test Split Split data into 80% training and 20% testing sets
 
 
 ✅ Current Project Status ✔ Preprocessing complete ⏳
