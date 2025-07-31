@@ -53,7 +53,7 @@ Columns: 11 (including the target salary_in_usd)
 
 Type: Regression 
 
-🔧 Stage 1: Dataset Collection Imported the dataset using pandas
+🧼 Stage 1: Dataset Collection Imported the dataset using pandas
 
 Inspected column names, data types, and missing values
 
@@ -77,25 +77,25 @@ Verified structure and feature relevance
 
     Filtered out extreme salary values outside these bounds to prevent distortion in the model.
 
-🔹 4. Skewness Correction
+ 🔹Skewness Correction
 
            Analyzed the skewness of the target variable (salary_in_usd), which showed a strong right-skew.
 
            Applied log transformation (log1p) to reduce skewness and improve model performance.
 
-🔹 5. Data Type Conversion
+🔹  Data Type Conversion
 
            Ensured appropriate data types for each column (e.g., converting categorical columns to object or category).
  
-🔹 6. Categorical Feature Encoding
+🔹  Categorical Feature Encoding
       Converted categorical variables like job_title, company_size, etc., into numerical format using  One-Hot Encoding as required.
 
 
-🔹 7.  Feature Scaling Applied StandardScaler  to training Data
+🔹  Feature Scaling Applied StandardScaler  to training Data
 
 This standardization ensures consistent scale for models sensitive to feature magnitude
 
-🔹 8.  Train/Test Split Split data into 80% training and 20% testing sets
+🔹  Train/Test Split Split data into 80% training and 20% testing sets
 
 
 ✅ Current Project Status ✔ Preprocessing complete ⏳
