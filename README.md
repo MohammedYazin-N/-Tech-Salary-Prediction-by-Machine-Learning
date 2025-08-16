@@ -55,7 +55,7 @@ Type: Regression
 
 # 🔄 PROJECT WORKFLOW 🔄
 
-🧼 Stage 1: Dataset Understanding and Cleaning 
+## 🧼 Stage 1: Dataset Understanding and Cleaning 
 
 🔹 Imported the dataset using pandas
 
@@ -68,7 +68,7 @@ Type: Regression
 
 🔹 Verified structure and feature relevance
 
-🧼  Stage 2 : Exploratory Data Analysis (EDA)
+## 🧼  Stage 2 : Exploratory Data Analysis (EDA)
 🔹 Able to explain "Job Title Distribution" using  Count Plot.
 
 🔹 Storytells about "Salary vs. Experience Level" using Box plot
