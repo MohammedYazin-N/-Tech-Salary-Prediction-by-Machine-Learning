@@ -163,7 +163,7 @@ An R² around 0.28 suggests that the models capture only a moderate portion of s
 This is acceptable in real-world datasets, especially when predicting salaries where many hidden or unmeasured factors (e.g., individual skills, negotiation, company policies) affect the outcome.
 
 
-## 5️⃣ Stage 5: Hyperparameter Tuning with Randomized Search CV
+## 🧼 Stage 5: Hyperparameter Tuning with Randomized Search CV
 
 After building baseline models, the next step was to **optimize model performance** by fine-tuning hyperparameters. Instead of manually guessing parameter values, I used **RandomizedSearchCV**, which efficiently samples from a wide range of hyperparameter combinations and performs cross-validation to identify the best configuration.
 
@@ -205,7 +205,7 @@ print("Test R² Score:", r2_score(y_test, y_pred))
 
 Hyperparameter tuning with RandomizedSearchCV significantly enhanced the model’s generalization. The tuned HGBR achieved improved performance both in cross-validation and on unseen test data, making it a strong candidate for the final predictive model.
 
-## 6️⃣ Stage 6: Prediction
+## 🧼 Stage 6: Prediction
 
 After fine-tuning and finalizing the best model, the next step was to **use the trained model for predictions on new unseen data**.
 
